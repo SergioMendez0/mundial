@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#DFC13F">
+        <link rel="icon" href="icon/icon-100.png">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap/js/bootstrap.js"></script>
+        <link rel="manifest" href="manifest.webmanifest">
+        <script src="app.js"></script>
+        
+      
+        <title>Qatar2022</title>
+        
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Qatar2022</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="mejor.html">El mejor</a>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <div class="container">
+            <div class="col-md-12">
+            <img src="img/lege.jpg" class="img-fluid" width="1080px"">
+        </div>
+        <label for="clima" >
+            <h2>Selecciona tu pais para ver el mejor jugador: </h2>
+        </label>
+<select id="clima">
+  <option value="">
+    <h3>Haga una elección </h3>
+</option>
+  <option value="argentina">Argentina</option>n
+  <option value="mexico">Mexico</option>
+  <option value="polonia">Polonia</option>
+  <option value="brasil">Brasil</option>
+  <option value="francia">Francia</option>
+  <option value="uruguay">Uruguay</option>
+  <option value="alemania">Alemania</option>
+  <option value="españa">España</option>
+  <option value="inglaterra">Inglaterra</option>
+</select>
+
+<p></p>
+</div>
+<script>
+ 
+    let seleccionar = document.querySelector('select');
+    let parrafo = document.querySelector('p');
+    
+    seleccionar.addEventListener('change', establecerClima);
+    
+    function establecerClima() {
+      let eleccion = seleccionar.value;
+    
+      if (eleccion === 'argentina') {
+        parrafo.textContent = 'Lionel Andres Messi';
+      } else if (eleccion === 'mexico') {
+        parrafo.textContent = 'Chuky Lozano';
+      } else if (eleccion === 'polonia') {
+        parrafo.textContent = 'Robert Lewandowski';
+      } else if (eleccion === 'brasil') {
+        parrafo.textContent = 'Neymar Jr';
+      }  else if (eleccion === 'francia') {
+        parrafo.textContent = 'Kylian Mbappe';
+      } else if (eleccion === 'uruguay') {
+        parrafo.textContent = 'Valverde';
+      } else if (eleccion === 'alemania') {
+        parrafo.textContent = 'Muller';
+      } else if (eleccion === 'españa') {
+        parrafo.textContent = 'Pedri';
+      } else if (eleccion === 'inglaterra') {
+        parrafo.textContent = 'Harry Kane';
+      }else {
+        parrafo.textContent = '';
+      }
+    }
+     
+            </script>
+    </body>
+    <footer>
+        <div class="container">
+            <footer position="fixed">
+            <div class="y2WTGm" style="background-color: rgb(15, 31, 179);">
+            <div class="row">
+              <div class="col-4">
+                <div class="DMglHQ eZHaLu" style="color: rgb(255, 247, 247);">
+                  <div class="JYs02A">Terminos y condiciones</div>
+                  <span>Aplican terminos y condiciones o visita nuestra pagina "terminosycondicionesqatar2022.com" para mas informacion</span>
+                 
+                </div>
+              </div>
+              
+              
+            </div>
+          </footer>
+    </footer>
+</html>
